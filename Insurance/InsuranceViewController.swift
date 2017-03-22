@@ -9,11 +9,6 @@
 import UIKit
 
 class InsuranceViewController: UIViewController {
-
-    
-    @IBOutlet weak var display: UILabel?
-    var userIsInMiddleOfTyping = false
-    
     
     @IBAction func TouchGetQuote(_ sender: UIButton) {
         let buttonName = sender.currentTitle!
