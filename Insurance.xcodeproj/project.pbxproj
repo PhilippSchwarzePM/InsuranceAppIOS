@@ -16,6 +16,7 @@
 		8788EA041E82C25F007A04DF /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788EA031E82C25F007A04DF /* InsuranceViewController.swift */; };
 		8788EA061E82CBBC007A04DF /* perfectoSign.png in Resources */ = {isa = PBXBuildFile; fileRef = 8788EA051E82CBBC007A04DF /* perfectoSign.png */; };
 		8788EA081E82CD8A007A04DF /* LoginViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788EA071E82CD8A007A04DF /* LoginViewControl.swift */; };
+		8788EA0A1E83014B007A04DF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788EA091E83014B007A04DF /* MoneyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8788EA031E82C25F007A04DF /* InsuranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
 		8788EA051E82CBBC007A04DF /* perfectoSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perfectoSign.png; sourceTree = "<group>"; };
 		8788EA071E82CD8A007A04DF /* LoginViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControl.swift; sourceTree = "<group>"; };
+		8788EA091E83014B007A04DF /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				8788EA011E829D05007A04DF /* HomeWindowBrain.swift */,
 				8788E9F21E814DC1007A04DF /* Main.storyboard */,
 				8788EA031E82C25F007A04DF /* InsuranceViewController.swift */,
+				8788EA091E83014B007A04DF /* MoneyViewController.swift */,
 			);
 			path = Insurance;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				8788EA021E829D05007A04DF /* HomeWindowBrain.swift in Sources */,
 				8788E9F11E814DC1007A04DF /* ViewController.swift in Sources */,
 				8788E9EF1E814DC1007A04DF /* AppDelegate.swift in Sources */,
+				8788EA0A1E83014B007A04DF /* MoneyViewController.swift in Sources */,
 				8788EA041E82C25F007A04DF /* InsuranceViewController.swift in Sources */,
 				8788EA081E82CD8A007A04DF /* LoginViewControl.swift in Sources */,
 			);

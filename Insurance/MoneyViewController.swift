@@ -1,5 +1,5 @@
 //
-//  LoginViewControl.swift
+//  MoneyViewController.swift
 //  Insurance
 //
 //  Created by Philipp Schwarze on 22/03/2017.
@@ -8,15 +8,9 @@
 
 import UIKit
 
+class MoneyViewController: UIViewController {
 
-class LoginViewControl: UIViewController {
-
-    var credentials: [String:String] = [
-    "philipp" : "pass"
-    ]
-    @IBOutlet weak var username: UITextField!
-    
-    @IBOutlet weak var password: UITextField!
+  
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -24,11 +18,6 @@ class LoginViewControl: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
-    @IBAction func Login(_ sender: UIButton) {
-        if credentials["philipp"]=="pass"{
-            print("logged in")
-    }
-    }
+  
 
 }
