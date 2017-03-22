@@ -12,7 +12,8 @@ import UIKit
 class LoginViewControl: UIViewController {
 
     var credentials: [String:String] = [
-    "philipp" : "pass"
+    "philipp" : "pass",
+    "ps":"rocks"
     ]
     @IBOutlet weak var username: UITextField!
     
@@ -26,7 +27,7 @@ class LoginViewControl: UIViewController {
     }
     
     @IBAction func Login(_ sender: UIButton) {
-        if credentials["philipp"]=="pass"{
+        if credentials[username.text!]==password.text!{
             print("logged in")
     }
     }
