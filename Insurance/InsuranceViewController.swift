@@ -10,19 +10,18 @@ import UIKit
 
 class InsuranceViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
+    @IBOutlet weak var display: UILabel?
+    var userIsInMiddleOfTyping = false
+    
+    
+    @IBAction func TouchGetQuote(_ sender: UIButton) {
+        let buttonName = sender.currentTitle!
+        //let currentText = display!.text!
+        
+        print("\(buttonName) was called")
+        
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -30,6 +29,4 @@ class InsuranceViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
-
 }

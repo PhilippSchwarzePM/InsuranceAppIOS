@@ -12,6 +12,10 @@
 		8788E9F41E814DC1007A04DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8788E9F21E814DC1007A04DF /* Main.storyboard */; };
 		8788E9F61E814DC1007A04DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8788E9F51E814DC1007A04DF /* Assets.xcassets */; };
 		8788E9F91E814DC1007A04DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8788E9F71E814DC1007A04DF /* LaunchScreen.storyboard */; };
+		8788EA021E829D05007A04DF /* HomeWindowBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788EA011E829D05007A04DF /* HomeWindowBrain.swift */; };
+		8788EA041E82C25F007A04DF /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788EA031E82C25F007A04DF /* InsuranceViewController.swift */; };
+		8788EA061E82CBBC007A04DF /* perfectoSign.png in Resources */ = {isa = PBXBuildFile; fileRef = 8788EA051E82CBBC007A04DF /* perfectoSign.png */; };
+		8788EA081E82CD8A007A04DF /* LoginViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788EA071E82CD8A007A04DF /* LoginViewControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8788E9F51E814DC1007A04DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8788E9F81E814DC1007A04DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8788E9FA1E814DC1007A04DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8788EA011E829D05007A04DF /* HomeWindowBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeWindowBrain.swift; path = ../HomeWindowBrain.swift; sourceTree = "<group>"; };
+		8788EA031E82C25F007A04DF /* InsuranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
+		8788EA051E82CBBC007A04DF /* perfectoSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perfectoSign.png; sourceTree = "<group>"; };
+		8788EA071E82CD8A007A04DF /* LoginViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		8788E9ED1E814DC1007A04DF /* Insurance */ = {
 			isa = PBXGroup;
 			children = (
-				8788E9EE1E814DC1007A04DF /* AppDelegate.swift */,
+				8788EA071E82CD8A007A04DF /* LoginViewControl.swift */,
+				8788EA001E8278BC007A04DF /* SupportingFiles */,
 				8788E9F01E814DC1007A04DF /* ViewController.swift */,
+				8788EA011E829D05007A04DF /* HomeWindowBrain.swift */,
 				8788E9F21E814DC1007A04DF /* Main.storyboard */,
+				8788EA031E82C25F007A04DF /* InsuranceViewController.swift */,
+			);
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		8788EA001E8278BC007A04DF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8788EA051E82CBBC007A04DF /* perfectoSign.png */,
+				8788E9EE1E814DC1007A04DF /* AppDelegate.swift */,
 				8788E9F51E814DC1007A04DF /* Assets.xcassets */,
 				8788E9F71E814DC1007A04DF /* LaunchScreen.storyboard */,
 				8788E9FA1E814DC1007A04DF /* Info.plist */,
 			);
-			path = Insurance;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8788EA061E82CBBC007A04DF /* perfectoSign.png in Resources */,
 				8788E9F91E814DC1007A04DF /* LaunchScreen.storyboard in Resources */,
 				8788E9F61E814DC1007A04DF /* Assets.xcassets in Resources */,
 				8788E9F41E814DC1007A04DF /* Main.storyboard in Resources */,
@@ -137,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8788EA021E829D05007A04DF /* HomeWindowBrain.swift in Sources */,
 				8788E9F11E814DC1007A04DF /* ViewController.swift in Sources */,
 				8788E9EF1E814DC1007A04DF /* AppDelegate.swift in Sources */,
+				8788EA041E82C25F007A04DF /* InsuranceViewController.swift in Sources */,
+				8788EA081E82CD8A007A04DF /* LoginViewControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
