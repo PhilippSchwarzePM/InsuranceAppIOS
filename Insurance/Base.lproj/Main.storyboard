@@ -194,19 +194,26 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="SbO-HP-yNE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculate your quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-4z-xyl">
+                                <rect key="frame" x="71" y="113" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA8-j5-Xex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866" y="133"/>
+            <point key="canvasLocation" x="1178" y="110"/>
         </scene>
     </scenes>
     <resources>
         <image name="perfectoSign.png" width="355" height="142"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zhJ-jo-6Tj"/>
+        <segue reference="SbO-HP-yNE"/>
     </inferredMetricsTieBreakers>
 </document>
