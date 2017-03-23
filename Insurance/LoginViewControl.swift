@@ -11,6 +11,7 @@ import UIKit
 
 class LoginViewControl: UIViewController {
 
+    var logincorrect = false
     var credentials: [String:String] = [
     "philipp" : "pass",
     "ps":"rocks"
@@ -29,7 +30,24 @@ class LoginViewControl: UIViewController {
     @IBAction func Login(_ sender: UIButton) {
         if credentials[username.text!]==password.text!{
             print("logged in")
+            logincorrect=true
     }
+        
     }
+    
+    
+
+// MARK: - Navigation
+
+override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    
+    
+    if identifier == "loggedin",
+        logincorrect==true {
+        return true
+    }
+    return false
+    
+}
 
 }

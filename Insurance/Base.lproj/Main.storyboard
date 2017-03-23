@@ -45,15 +45,16 @@
                                     <segue destination="dXr-RC-Qdr" kind="presentation" identifier="sendMoney" id="qal-bo-TJ1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAw-Tt-yF7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAw-Tt-yF7" userLabel="xclblGetAQuote">
                                 <rect key="frame" x="11" y="198" width="177" height="403"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="idGetAQuote" label="lblGetAQuote"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Get a Quote"/>
                                 <connections>
                                     <action selector="TouchGetQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MA9-U2-RZo"/>
-                                    <segue destination="S7I-ra-sws" kind="presentation" identifier="getQuote" modalPresentationStyle="fullScreen" id="vSb-j9-aTX"/>
+                                    <segue destination="S7I-ra-sws" kind="presentation" identifier="getQuote" id="vSb-j9-aTX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="221.59999999999999" y="110.19490254872565"/>
         </scene>
-        <!--View Controller-->
+        <!--Money View Controller-->
         <scene sceneID="Uox-FY-kXg">
             <objects>
-                <viewController id="dXr-RC-Qdr" sceneMemberID="viewController">
+                <viewController id="dXr-RC-Qdr" customClass="MoneyViewController" customModule="Insurance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vHz-ks-udX"/>
                         <viewControllerLayoutGuide type="bottom" id="Lix-SP-ASK"/>
@@ -108,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-Ah-EeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-302" y="864"/>
+            <point key="canvasLocation" x="935" y="110"/>
         </scene>
         <!--Login View Control-->
         <scene sceneID="bHx-fo-RDs">
@@ -156,6 +157,7 @@
                                 <connections>
                                     <action selector="Login:" destination="lQ4-s7-lsd" eventType="touchUpInside" id="y59-kS-cwE"/>
                                     <action selector="TouchGetQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48x-WC-OqL"/>
+                                    <segue destination="Df9-40-Wt6" kind="presentation" identifier="loggedin" id="8BY-nW-3Cx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -168,12 +170,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kU1-io-X3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695.20000000000005" y="99.400299850074973"/>
+            <point key="canvasLocation" x="222" y="-583"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="85H-bM-pvT">
+            <objects>
+                <viewController id="Df9-40-Wt6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XvF-Pd-AOw"/>
+                        <viewControllerLayoutGuide type="bottom" id="7CJ-WP-8gv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iOg-6n-Av9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations, you are logged in!!!" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="R93-Pu-dZH">
+                                <rect key="frame" x="16" y="213" width="343" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liK-AM-Rtm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="-577.06146926536735"/>
+        </scene>
+        <!--Calc Quote View Controller-->
         <scene sceneID="ZNI-1w-a8x">
             <objects>
-                <viewController id="S7I-ra-sws" sceneMemberID="viewController">
+                <viewController id="S7I-ra-sws" customClass="CalcQuoteViewController" customModule="Insurance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xmz-ZK-JAf"/>
                         <viewControllerLayoutGuide type="bottom" id="1Uu-An-6W2"/>
@@ -207,13 +236,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA8-j5-Xex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="110"/>
+            <point key="canvasLocation" x="-663" y="109"/>
         </scene>
     </scenes>
     <resources>
         <image name="perfectoSign.png" width="355" height="142"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SbO-HP-yNE"/>
+        <segue reference="zhJ-jo-6Tj"/>
     </inferredMetricsTieBreakers>
 </document>
