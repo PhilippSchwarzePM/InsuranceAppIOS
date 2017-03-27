@@ -9,20 +9,29 @@
 import Foundation
 
 struct HomeWindowBrain{
-    private var accumulator: Double?
+    public var balance:Double = 400.15
+    public var isLoggedOn:Bool?
+    public var userName:String?
+    private var credentials: [String:String] = [
+        "philipp" : "pass",
+        "ps":"rocks"
+    ]
     
-    func performOperation(_ symbol: String){
-        
-    }
-    
-    func setOperand(_ operand: Double) {
-        
-    }
-    
-    var result: Double?{
-        get{
-            return accumulator
+    mutating func Login (user:String, Password:String) -> Bool{
+        if credentials[user]==Password{
+            isLoggedOn=true
+            userName=user
+            return true
         }
-        
+        return false
+    }
+    mutating func LogOut(){
+        isLoggedOn=nil
+        userName=nil
+    }
+    
+    mutating func sendMoney(sendAmount:Double) -> Bool{
+        balance = balance - sendAmount
+        return true
     }
 }

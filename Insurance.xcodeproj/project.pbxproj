@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		877384411E853DB800C62C7A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877384401E853DB800C62C7A /* BaseViewController.swift */; };
 		8788E9EF1E814DC1007A04DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788E9EE1E814DC1007A04DF /* AppDelegate.swift */; };
 		8788E9F11E814DC1007A04DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788E9F01E814DC1007A04DF /* ViewController.swift */; };
 		8788E9F41E814DC1007A04DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8788E9F21E814DC1007A04DF /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		877384401E853DB800C62C7A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8788E9EB1E814DC1007A04DF /* Insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insurance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8788E9EE1E814DC1007A04DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8788E9F01E814DC1007A04DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,10 +68,11 @@
 		8788E9ED1E814DC1007A04DF /* Insurance */ = {
 			isa = PBXGroup;
 			children = (
-				8788EA071E82CD8A007A04DF /* LoginViewControl.swift */,
-				8788EA001E8278BC007A04DF /* SupportingFiles */,
-				8788E9F01E814DC1007A04DF /* ViewController.swift */,
+				877384401E853DB800C62C7A /* BaseViewController.swift */,
 				8788EA011E829D05007A04DF /* HomeWindowBrain.swift */,
+				8788EA001E8278BC007A04DF /* SupportingFiles */,
+				8788EA071E82CD8A007A04DF /* LoginViewControl.swift */,
+				8788E9F01E814DC1007A04DF /* ViewController.swift */,
 				8788E9F21E814DC1007A04DF /* Main.storyboard */,
 				878F6D9F1E841C4700C4D7B2 /* CalcQuoteViewController.swift */,
 				8788EA031E82C25F007A04DF /* InsuranceViewController.swift */,
@@ -168,6 +171,7 @@
 				8788EA021E829D05007A04DF /* HomeWindowBrain.swift in Sources */,
 				8788E9F11E814DC1007A04DF /* ViewController.swift in Sources */,
 				8788E9EF1E814DC1007A04DF /* AppDelegate.swift in Sources */,
+				877384411E853DB800C62C7A /* BaseViewController.swift in Sources */,
 				8788EA0A1E83014B007A04DF /* MoneyViewController.swift in Sources */,
 				8788EA041E82C25F007A04DF /* InsuranceViewController.swift in Sources */,
 				8788EA081E82CD8A007A04DF /* LoginViewControl.swift in Sources */,

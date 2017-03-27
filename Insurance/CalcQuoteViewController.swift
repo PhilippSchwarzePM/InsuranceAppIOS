@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CalcQuoteViewController: UIViewController {
-
+class CalcQuoteViewController: BaseViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
